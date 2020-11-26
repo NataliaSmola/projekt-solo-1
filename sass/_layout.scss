@@ -1,0 +1,28 @@
+.col-1 {
+  background: $sidebar-nav;
+  flex: 3;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 80%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  position: relative;
+}
+.content > article {
+  flex: 4;
+  min-height: 60vh;
+  background-color: white;
+}
+
+article{
+  border: 1px solid black;
+  margin: 10px;
+}
+.test{
+  overflow: hidden;
+}

@@ -1,0 +1,19 @@
+
+.general-wrapper{
+  //border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  //border: 1px solid red;
+  padding: 20px 10px;
+  .dot{
+    background: red;
+  }
+}
+.horizontal-line{
+  border-top: 1px solid $background-color;
+}
+.container-title{
+  //border: 1px solid yellow;
+  padding:0 10px;
+  height: 25px;
+}

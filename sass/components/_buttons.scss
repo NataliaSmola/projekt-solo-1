@@ -1,0 +1,14 @@
+.button {
+  background-color: $buttons-color;
+  border: none;
+  border-radius: 10%;
+  overflow: hidden;
+  display: inline-flex;
+}
+
+.btn-links{
+  border: 1px solid red;
+  i{
+    color: white;
+  }
+}
