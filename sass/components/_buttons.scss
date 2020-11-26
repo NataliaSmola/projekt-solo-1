@@ -4,6 +4,12 @@
   border-radius: 10%;
   overflow: hidden;
   display: inline-flex;
+  padding: 10px;
+  margin-left: 10px;
+
+  img {
+    filter: brightness(0) invert(1);
+  }
 }
 
 .btn-links{
