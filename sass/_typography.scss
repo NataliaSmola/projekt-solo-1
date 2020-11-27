@@ -7,8 +7,8 @@ h1 {
 }
 
 h2 {
-  font-size: 13px;
-  text-transform: uppercase;
+  font-size: 14px;
+  //text-transform: uppercase;
   color: $side-bar-font-color;
   font-family: $paragraph-font;
 }
@@ -60,4 +60,9 @@ li {
   border-radius: 50%;
   position: absolute;
   z-index: 1;
+}
+th {
+  color:  $side-bar-font-color;
+  font-size: 15px;
+  font-family: $paragraph-font;
 }

@@ -403,8 +403,7 @@ h1 {
 }
 
 h2 {
-  font-size: 13px;
-  text-transform: uppercase;
+  font-size: 14px;
   color: #808080;
   font-family: "Open Sans", Helvetica, Arial;
 }
@@ -456,6 +455,12 @@ li {
   border-radius: 50%;
   position: absolute;
   z-index: 1;
+}
+
+th {
+  color: #808080;
+  font-size: 15px;
+  font-family: "Open Sans", Helvetica, Arial;
 }
 
 #sidebar {
@@ -671,6 +676,10 @@ li {
   height: 25px;
 }
 
+.subtitle-wrapper {
+  padding-left: 13.5%;
+}
+
 .button {
   background-color: #FF9A38;
   border: none;
@@ -678,7 +687,7 @@ li {
   overflow: hidden;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 15px;
+  padding: 10px;
   margin-left: 10px;
 }
 
@@ -734,5 +743,25 @@ li {
 .vertical-line {
   margin-right: 10px;
   border-left: 1px solid #EEEEEB;
+  height: 25px;
+}
+
+.data-table {
+  border-collapse: collapse;
+  width: 35%;
+  margin: 0 25px;
+}
+
+.data-table th {
+  padding: 5px;
+}
+
+.data-table td {
+  text-align: end;
+}
+
+.data-table tr {
+  border-bottom: 1px solid #EEEEEB;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
