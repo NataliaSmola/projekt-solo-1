@@ -664,7 +664,8 @@ th {
 }
 
 .general-wrapper .dot {
-  background: red;
+  padding: 8px;
+  left: 10px;
 }
 
 .horizontal-line {
@@ -678,6 +679,12 @@ th {
 
 .subtitle-wrapper {
   padding-left: 13.5%;
+}
+
+.statistics-wrapper img {
+  width: 50%;
+  margin: 0 25%;
+  overflow: scroll;
 }
 
 .button {
@@ -763,5 +770,43 @@ th {
 .data-table tr {
   border-bottom: 1px solid #EEEEEB;
   text-align: left;
+}
+
+.data {
+  margin-top: 30px;
+}
+
+.earnings-chart {
+  margin-top: 50px;
+}
+
+.earnings-chart-box {
+  padding: 10px 15px;
+  position: relative;
+  background: #EEEEEB;
+  border-radius: 3px;
+  margin: 0 20px;
+  display: inline-table;
+}
+
+.earnings-chart-box .dot-signups {
+  background: #80BFCA;
+}
+
+.earnings-chart-box .dot-ftd {
+  background: #FF9A38;
+}
+
+.earnings-chart-box .dot-earned {
+  background: #59B66D;
+}
+
+.earnings-chart-box a {
+  padding: 0 15px;
+}
+
+.earnings-chart-box-wrapper {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 /*# sourceMappingURL=style.css.map */
