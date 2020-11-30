@@ -7,14 +7,34 @@
   padding: 10px;
   margin-left: 10px;
 
+  &:hover {
+    box-shadow: 0 0 11px $links-color;
+  }
+
   img {
     filter: brightness(0) invert(1);
   }
 }
 
-.btn-links{
-  border: 1px solid red;
+.button-container{
+  //border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  .btn-links{
+    //border: 1px solid green;
+    //padding: 0, 20px;
+    color: white;
+    justify-content: space-around;
+    font-size: 18px;
+    align-items: center;
+    height: 40px;
+    width: 110px;
+    border-radius: 5%
+  }
   i{
     color: white;
+    font-size: 15px;
   }
 }

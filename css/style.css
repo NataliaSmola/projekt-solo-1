@@ -373,8 +373,9 @@ template {
 }
 
 article {
-  border: 1px solid black;
   margin: 10px;
+  padding: 20px 10px;
+  box-shadow: -1px 1px 4px 0px grey;
 }
 
 .test {
@@ -682,9 +683,9 @@ th {
 }
 
 .statistics-wrapper img {
-  width: 50%;
-  margin: 0 25%;
+  width: auto;
   overflow: scroll;
+  height: 250px;
 }
 
 .button {
@@ -698,16 +699,37 @@ th {
   margin-left: 10px;
 }
 
+.button:hover {
+  box-shadow: 0 0 11px red;
+}
+
 .button img {
   filter: brightness(0) invert(1);
 }
 
-.btn-links {
-  border: 1px solid red;
+.button-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 20px;
 }
 
-.btn-links i {
+.button-container .btn-links {
   color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 18px;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 40px;
+  width: 110px;
+  border-radius: 5%;
+}
+
+.button-container i {
+  color: white;
+  font-size: 15px;
 }
 
 .calendar-wrapper {
@@ -776,6 +798,65 @@ th {
   margin-top: 30px;
 }
 
+.links-table {
+  width: 60%;
+  border-collapse: collapse;
+  transition: all 0.5s ease;
+}
+
+.links-table th {
+  text-align: left;
+  padding: 15px 5px;
+}
+
+.links-table td {
+  text-align: center;
+}
+
+.links-table td:hover {
+  opacity: 1;
+}
+
+.links-table tr {
+  border-bottom: 1px solid #EEEEEB;
+  border-top: 1px solid #EEEEEB;
+  z-index: 1;
+}
+
+.links-table tr:hover {
+  background-color: #F1F3F3;
+  opacity: 1;
+}
+
+.links-table .link-address {
+  color: #56819f;
+}
+
+.links-img {
+  filter: grayscale(150%) brightness(150%) sepia(60%) hue-rotate(5deg) saturate(500%) contrast(0.9);
+}
+
+.img-wrapper {
+  opacity: 0;
+}
+
+.img-wrapper:hover {
+  opacity: 1;
+}
+
+.links-icon {
+  margin-left: 10px;
+}
+
+.scroll-wrapper {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  overflow-x: auto;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 .earnings-chart {
   margin-top: 50px;
 }
@@ -787,6 +868,17 @@ th {
   border-radius: 3px;
   margin: 0 20px;
   display: inline-table;
+  transition: all 0.5s ease;
+}
+
+.earnings-chart-box:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  background: none;
+}
+
+.earnings-chart-box:active {
+  background: none;
+  box-shadow: none;
 }
 
 .earnings-chart-box .dot-signups {
@@ -803,6 +895,14 @@ th {
 
 .earnings-chart-box a {
   padding: 0 15px;
+}
+
+.earnings-chart-box a:hover {
+  color: #56819f;
+}
+
+.earnings-chart-box a:active {
+  color: #56819f;
 }
 
 .earnings-chart-box-wrapper {
