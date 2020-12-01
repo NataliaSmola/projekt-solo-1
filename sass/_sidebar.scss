@@ -1,6 +1,8 @@
 #sidebar {
   height: 100%;
   transition: $transition;
+  background: $sidebar-nav;
+  min-width: max-content;
 }
 
 .title-wrapper{
@@ -8,6 +10,7 @@
   justify-content: space-between;
   height: 70px;
   padding-top: 5px;
+  background: $sidebar-nav;
 }
 .title {
   padding: 0 15px;
@@ -19,6 +22,9 @@
   &:hover{
     background-color: $sidebar-hover-background;
   }
+}
+.sidebar-menu{
+  background: $sidebar-nav;
 }
 
 
@@ -111,16 +117,33 @@
 }
   /*Media Query*/
   @media only screen and (max-width: 768px) {
+    #sidebar {
+      width: 100%;
 
-    .icon-wrapper{
-      display: initial;
-      z-index: 1;
+      .title-wrapper{
+        display: block;
+      }
+
+      .title{
+        display: none;
+      }
+
+      .icon-wrapper{
+        padding: 15px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
     }
-    .col-1{
+    .sidebar-menu {
       display: none;
     }
-    #top_nav {
-      justify-content: space-between;
-}
+    .col-1 {
+      width: 10%;
+      display: flex;
+    }
+
+
+
 
     }

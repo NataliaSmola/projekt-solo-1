@@ -5,7 +5,11 @@
   align-items: center;
   background: $page-title-color;
   height: 70px;
+  flex: 1;
 
+}
+.top-nav-container{
+  border: 1px solid blue;
 }
 .top-nav-wrapper{
   //border: 1px solid red;
@@ -49,4 +53,12 @@
       margin-left: 10px;
     }
   }
+}
+
+/*Media Query*/
+@media only screen and (max-width: 768px) {
+#top_nav {
+  order: 1; 
+}
+
 }

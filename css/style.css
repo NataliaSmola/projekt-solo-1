@@ -342,9 +342,9 @@ template {
 }
 
 .col-1 {
-  background: #191919;
   -ms-flex: 3;
       flex: 3;
+  height: auto;
 }
 
 .col-2 {
@@ -354,6 +354,7 @@ template {
       flex-direction: column;
   -ms-flex: 80%;
       flex: 80%;
+  height: 100vh;
 }
 
 .content {
@@ -363,12 +364,12 @@ template {
       flex-direction: column;
   overflow-y: auto;
   position: relative;
+  overflow-y: scroll;
 }
 
 .content > article {
   -ms-flex: 4;
       flex: 4;
-  min-height: 60vh;
   background-color: white;
 }
 
@@ -389,7 +390,7 @@ article {
 body {
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  overflow-y: hidden;
   -ms-flex-direction: row;
       flex-direction: row;
   margin: 0;
@@ -467,6 +468,10 @@ th {
 #sidebar {
   height: 100%;
   transition: all 0.5s ease;
+  background: #191919;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 .title-wrapper {
@@ -476,6 +481,7 @@ th {
       justify-content: space-between;
   height: 70px;
   padding-top: 5px;
+  background: #191919;
 }
 
 .title {
@@ -491,6 +497,10 @@ th {
 
 .icon-wrapper:hover {
   background-color: #282828;
+}
+
+.sidebar-menu {
+  background: #191919;
 }
 
 .sidebar-menu-list {
@@ -582,16 +592,31 @@ th {
 
 /*Media Query*/
 @media only screen and (max-width: 768px) {
-  .icon-wrapper {
-    display: initial;
-    z-index: 1;
+  #sidebar {
+    width: 100%;
   }
-  .col-1 {
+  #sidebar .title-wrapper {
+    display: block;
+  }
+  #sidebar .title {
     display: none;
   }
-  #top_nav {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+  #sidebar .icon-wrapper {
+    padding: 15px;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .sidebar-menu {
+    display: none;
+  }
+  .col-1 {
+    width: 10%;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -604,6 +629,12 @@ th {
       align-items: center;
   background: white;
   height: 70px;
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.top-nav-container {
+  border: 1px solid blue;
 }
 
 .top-nav-wrapper {
@@ -656,6 +687,14 @@ th {
   margin-left: 10px;
 }
 
+/*Media Query*/
+@media only screen and (max-width: 768px) {
+  #top_nav {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+}
+
 .general-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -700,7 +739,7 @@ th {
 }
 
 .button:hover {
-  box-shadow: 0 0 11px red;
+  box-shadow: 0 0 11px #56819f;
 }
 
 .button img {
