@@ -594,6 +594,7 @@ th {
 @media only screen and (max-width: 768px) {
   #sidebar {
     width: 100%;
+    z-index: 5;
   }
   #sidebar .title-wrapper {
     display: block;
@@ -617,6 +618,10 @@ th {
     width: 10%;
     display: -ms-flexbox;
     display: flex;
+  }
+  .sidebar-menu.show {
+    display: block;
+    width: 180px;
   }
 }
 
@@ -864,7 +869,6 @@ th {
 
 .links-table tr:hover {
   background-color: #F1F3F3;
-  opacity: 1;
 }
 
 .links-table .link-address {
