@@ -1,0 +1,113 @@
+/*Media Query*/
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .earnings-chart-box {
+    margin: 0 5px;
+    padding: 5px;
+    //margin-top: 10px;
+  }
+
+  .content {
+    height: 90vh;
+  }
+
+  body {
+    display: grid;
+  }
+
+  .links-table {
+    width: 100%;
+  }
+
+  .general-wrapper .dot {
+    left: 1px;
+  }
+
+  .calendar-table p {
+    margin-right: 10px;
+  }
+
+  .button {
+    padding: 5px;
+  }
+
+  #top_nav {
+    //order: 1;
+    display: none;
+  }
+
+  .chart-container {
+    width: 100%;
+  }
+
+  #sidebar {
+    width: 100%;
+    z-index: 5;
+
+    .title-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .title {
+      display: flex;
+    }
+
+    .icon-wrapper {
+      padding: 15px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .sidebar-menu {
+    display: none;
+  }
+
+  .col-1 {
+    display: flex;
+    height: 70px;
+  }
+
+  .sidebar-menu.show {
+    display: grid;
+  }
+
+  .links-table {
+    .link-address,
+    th {
+      font-size: 14px;
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .links-table {
+    width: 80%;
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .chart-container {
+    width: 80%;
+  }
+
+  .links-table {
+    width: 60%;
+  }
+
+  .sidebar-manager .manager-wrapper {
+    padding-right: 40px;
+  }
+
+  .sidebar-manager .manager-title {
+    padding-right: 50px;
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .chart-container {
+    width: 60%;
+  }
+}

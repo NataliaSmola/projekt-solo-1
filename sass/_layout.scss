@@ -1,10 +1,10 @@
 .col-1 {
   //background: $sidebar-nav;
   flex: 3;
-  height: auto;
+  height: 100vh;
 }
 .col-2 {
-  display: flex;
+  display: grid;
   flex-direction: column;
   flex: 80%;
   height: 100vh;
@@ -15,6 +15,7 @@
   overflow-y: auto;
   position: relative;
   overflow-y: scroll;
+  //height: 100vh;
 }
 .content > article {
   flex: 4;

@@ -46,3 +46,19 @@
   //border: 1px solid red;
   display: inline-flex;
 }
+
+.chart-container {
+  position: relative;
+  //height: 50vh;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.scroll-wrapper{
+  //border: 1px solid green;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+}

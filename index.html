@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Satisfy&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <nav class="col-1">
     <div id="sidebar" class="sidenav">
@@ -68,6 +66,7 @@
             </li>
           </ul>
           <div class="sidebar-manager">
+            <div class="horizontal-line"></div>
             <div class="manager-title">
               <h2>Your Manager</h2>
             </div>
@@ -179,9 +178,10 @@
           </div>
         </div>
       </div>
-      <div class="statistics-wrapper">
-        <div class="scroll-wrapper">
-      </div>
+      <div class="scroll-wrapper">
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
       </div>
     </div>
     </article>
@@ -287,7 +287,7 @@
     </article>
     </main>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="js/script.js"></script>
 </body>
-
 </html>
