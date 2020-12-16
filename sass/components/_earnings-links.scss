@@ -1,62 +1,63 @@
-.earnings-chart{
+.earnings-chart {
   margin-top: 50px;
 }
 
-.earnings-chart-box{
-  //border: 1px solid black;
-    padding: 10px 15px;
-    position: relative;
-    background: $background-color;
-    border-radius: 3px;
-    margin: 0 20px;
-    display: inline-table;
-    transition: $transition;
-    &:hover{
-      box-shadow: 0 0 11px rgba(33,33,33,.2);
-      background: none;
-    }
-    &:active{
-      background: none;
-      box-shadow: none;
+.earnings-chart-box {
+  padding: 10px 15px;
+  position: relative;
+  background: $background-color;
+  border-radius: 3px;
+  margin: 0 20px;
+  display: inline-table;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    background: none;
+  }
+
+  &:active {
+    background: none;
+    box-shadow: none;
+  }
+
+  .dot-signups {
+    background: $signups-dot;
+  }
+
+  .dot-ftd {
+    background: $buttons-color;
+  }
+
+  .dot-earned {
+    background: $earned-dot;
+  }
+
+  a {
+    padding: 0 15px;
+
+    &:hover {
+      color: $links-color;
     }
 
-    .dot-signups{
-      background: $signups-dot;
+    &:active {
+      color: $links-color;
     }
-    .dot-ftd{
-      background: $buttons-color;
-    }
-    .dot-earned{
-      background: $earned-dot;
-    }
-
-    a{
-      //border: 1px solid black;
-      padding: 0 15px;
-      &:hover{
-        color: $links-color;
-      }
-      &:active {
-        color: $links-color;
-      }
-
-    }
+  }
 }
-.earnings-chart-box-wrapper{
-  //border: 1px solid red;
+
+.earnings-chart-box-wrapper {
   display: inline-flex;
 }
 
 .chart-container {
   position: relative;
-  //height: 50vh;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.scroll-wrapper{
-  //border: 1px solid green;
+.scroll-wrapper {
   display: block;
   width: 100%;
   margin: 0 auto;

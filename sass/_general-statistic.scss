@@ -1,31 +1,29 @@
-
-.general-wrapper{
-  //border: 1px solid red;
+.general-wrapper {
   display: flex;
   justify-content: center;
-  //border: 1px solid red;
   padding: 20px 10px;
-  .dot{
+
+  .dot {
     padding: 8px;
     left: 10px;
   }
 }
-.horizontal-line{
+
+.horizontal-line {
   border-top: 1px solid $background-color;
 }
-.container-title{
-  //border: 1px solid yellow;
-  padding:0 10px;
+
+.container-title {
+  padding: 0 10px;
   height: 25px;
 }
-.subtitle-wrapper{
-  //border: 1px solid black;
+
+.subtitle-wrapper {
   padding-left: 13.5%;
 }
-.statistics-wrapper{
-//  border: 1px solid black;
-  img{
-  //  border: 1px solid red;
+
+.statistics-wrapper {
+  img {
     width: auto;
     overflow: scroll;
     height: 250px;

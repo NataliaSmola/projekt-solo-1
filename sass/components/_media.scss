@@ -1,18 +1,27 @@
 /*Media Query*/
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
+@media (max-width: 420px) {
+  .top-nav-list .amount-user-wrapper .total-amount {
+    display: none;
+  }
+}
+// Small devices (landscape phones, 576px)
+@media (max-width: 575.98px) {
+  body {
+    display: block;
+  }
+
+  .col-1 {
+    display: flex;
+    height: 70px;
+  }
+
   .earnings-chart-box {
     margin: 0 5px;
     padding: 5px;
-    //margin-top: 10px;
   }
 
   .content {
-    height: 90vh;
-  }
-
-  body {
-    display: grid;
+    height: 85vh;
   }
 
   .links-table {
@@ -32,8 +41,23 @@
   }
 
   #top_nav {
-    //order: 1;
     display: none;
+  }
+
+  #top_nav.show {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    background:  $sidebar-nav;
+    border-top: 1px solid $side-bar-font-color;
+    border-bottom: 1px solid $side-bar-font-color;
+    height: 50px;
+  }
+
+  .top-nav-list .amount-user-wrapper {
+    border-style: none;
   }
 
   .chart-container {
@@ -61,17 +85,20 @@
     }
   }
 
-  .sidebar-menu {
-    display: none;
+  .sidebar-manager {
+    margin: 0;
   }
 
-  .col-1 {
-    display: flex;
-    height: 70px;
+  .sidebar-menu {
+    display: none;
+    overflow-y: scroll;
+    height: 80vh;
   }
 
   .sidebar-menu.show {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
   }
 
   .links-table {
@@ -81,10 +108,20 @@
     }
   }
 }
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sidebar-menu {
+    overflow-y: scroll;
+    height: 80vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
   .links-table {
     width: 80%;
+  }
+  .sidebar-menu {
+    overflow-y: scroll;
+    height: 80vh;
   }
 }
 // Large devices (desktops, 992px and up)
@@ -109,5 +146,11 @@
 @media (min-width: 1200px) {
   .chart-container {
     width: 60%;
+  }
+}
+
+@media (orientation: landscape) {
+  .sidebar {
+    overflow-y: scroll;
   }
 }

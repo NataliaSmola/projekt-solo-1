@@ -17,24 +17,22 @@
   }
 }
 
-.button-container{
-  //border: 1px solid red;
+.button-container {
   display: flex;
   justify-content: center;
   padding: 20px;
 
-  .btn-links{
-    //border: 1px solid green;
-    //padding: 0, 20px;
+  .btn-links {
     color: white;
     justify-content: space-around;
     font-size: 18px;
     align-items: center;
     height: 40px;
     width: 110px;
-    border-radius: 5%
+    border-radius: 5%;
   }
-  i{
+
+  i {
     color: white;
     font-size: 15px;
   }

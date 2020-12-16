@@ -3,12 +3,10 @@ h1 {
   font-family: $head-font;
   color: $page-title-color;
   font-weight: lighter;
-
 }
 
 h2 {
   font-size: 14px;
-  //text-transform: uppercase;
   color: $side-bar-font-color;
   font-family: $paragraph-font;
 }
@@ -19,15 +17,15 @@ h3 {
   font-weight: lighter;
   color: $side-bar-font-color;
 }
-h4{
+
+h4 {
   font-size: 15px;
   font-family: $paragraph-font;
-  //font-weight: lighter;
   text-transform: uppercase;
   color: $side-bar-font-color;
 }
 
-a{
+a {
   color: $side-bar-font-color;
   text-decoration: none;
   transition: $transition;
@@ -38,6 +36,7 @@ i {
   color: $side-bar-font-color;
   font-size: 20px;
 }
+
 li {
   font-size: 14px;
   font-family: $paragraph-font;
@@ -46,23 +45,23 @@ li {
   text-decoration: none;
   list-style: none;
 }
+
 .icon-image {
   height: 18px;
   width: 18px;
   filter: invert(83%) sepia(78%) saturate(0%) hue-rotate(202deg) brightness(50%) contrast(85%);
-  //color: $side-bar-font-color;
-  //filter: invert(83%) sepia(78%) saturate(0%) hue-rotate(202deg) brightness(60%) contrast(85%);
 }
+
 .dot {
   height: 10px;
   width: 10px;
-  //background-color: $manger-availability-dot;
   border-radius: 50%;
   position: absolute;
   z-index: 1;
 }
+
 th {
-  color:  $side-bar-font-color;
+  color: $side-bar-font-color;
   font-size: 15px;
   font-family: $paragraph-font;
 }

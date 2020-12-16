@@ -1,34 +1,35 @@
-.calendar-wrapper{
-  //border: 1px solid red;
+.calendar-wrapper {
   display: flex;
-  height: 35px
+  height: 35px;
 }
 
-.calendar-table{
+.calendar-table {
   border: 1px solid #EEEEEB;
-    padding: 5px 10px;
-    border-radius: 5%;
-    font-size: 15px;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    align-items: center;
-  p{
+  padding: 5px 10px;
+  border-radius: 5%;
+  font-size: 15px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  align-items: center;
+
+  p {
     margin-right: 40px;
     display: inline-flex;
     align-items: center;
   }
 }
-.calendar-image{
-  //border: 1px solid green;
+
+.calendar-image {
   display: flex;
   align-items: center;
-  .icon-image{
+
+  .icon-image {
     width: 12px;
     height: 12px;
-    //border: 1px solid black;
   }
 }
-.vertical-line{
+
+.vertical-line {
   margin-right: 10px;
   border-left: 1px solid $background-color;
   height: 25px;
