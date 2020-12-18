@@ -23,47 +23,54 @@
         </div>
       </div>
       <div class="sidebar-menu">
-        <ul class="sidebar-menu-list">
+        <ul id="nav-tab" class="sidebar-menu-list">
           <li>
             <span class="vertical-line-menu"></span>
             <div class="sidebar-menu-list-wrapper">
-              <a href="#"><img src="images/icons/general.svg" class="icon-image" alt="picture">General</a>
+              <a href="#content_general" data-tab="content_general" class="tab-link active">
+                <img src="images/icons/general.svg" class="icon-image" alt="picture">General</a>
             </div>
           </li>
           <li>
             <span class="vertical-line-menu"></span>
             <div class="sidebar-menu-list-wrapper">
-              <a href="#"><img src="images/icons/details.svg" class="icon-image" alt="picture">Details</a>
+              <a href="#content_details" data-tab="content_details" class="tab-link">
+                <img src="images/icons/details.svg" class="icon-image" alt="picture">Details</a>
             </div>
           </li>
           <li>
             <span class="vertical-line-menu"></span>
             <div class="sidebar-menu-list-wrapper">
-              <a href="#"><img src="images/icons/links.svg" class="icon-image" alt="picture">Links</a>
+              <a href="#content_links"  data-tab="content_links" class="tab-link">
+                <img src="images/icons/links.svg" class="icon-image" alt="picture">Links</a>
             </div>
           </li>
           <li>
             <span class="vertical-line-menu"></span>
             <div class="sidebar-menu-list-wrapper">
-              <a href="#"><img src="images/icons/banners.svg" class="icon-image" alt="picture">Banners</a>
+              <a href="#content_banners"  data-tab="content_banners" class="tab-link">
+                <img src="images/icons/banners.svg" class="icon-image" alt="picture">Banners</a>
             </div>
           </li>
           <li>
             <span class="vertical-line-menu"></span>
             <div class="sidebar-menu-list-wrapper">
-              <a href="#"><img src="images/icons/personaldata.svg" class="icon-image" alt="picture">Personal data</a>
+            <a href="#content_personal_data"  data-tab="content_personal_data" class="tab-link">
+                <img src="images/icons/personaldata.svg" class="icon-image" alt="picture">Personal data</a>
             </div>
           </li>
           <li>
             <span class="vertical-line-menu"></span>
             <div class="sidebar-menu-list-wrapper">
-              <a href="#"><img src="images/icons/payout.svg" class="icon-image" alt="picture">Payout</a>
+              <a href="#content_payout"  data-tab="content_payout" class="tab-link">
+                <img src="images/icons/payout.svg" class="icon-image" alt="picture">Payout</a>
             </div>
           </li>
           <li>
             <div class="vertical-line-menu"></div>
             <div class="sidebar-menu-list-wrapper">
-              <a href="#"><img src="images/icons/postback.svg" class="icon-image" alt="picture">Postback</a>
+              <a href="#content_postback"  data-tab="content_postback" class="tab-link">
+                <img src="images/icons/postback.svg" class="icon-image" alt="picture">Postback</a>
             </div>
           </li>
         </ul>
@@ -120,178 +127,308 @@
       </div>
     </header>
     <main class="content">
-      <article class="general-statistic-section">
-        <div class="container-title">
-          <h4>General Statistic</h4>
-        </div>
-        <div class="horizontal-line"></div>
-        <div class="calendar">
-          <div class="general-wrapper">
-            <div class="calendar-wrapper">
-              <div class="calendar-table">
-                <p> 24.01.2020</p>
-                <div class="vertical-line"></div>
-                <p> 24.01.2020 </p>
-                <div class="calendar-image">
-                  <a href="#"><img src="images/icons/calendar.svg" class="icon-image" alt="picture"></a>
-                </div>
-              </div>
-            </div>
-            <button class="button" type="submit"><img src="images/icons/refresh.svg" class="icon-image" alt="picture"></button>
+      <div id="content_general" class="tab-content active">
+        <article class="general-statistic-section container">
+          <div class="container-title">
+            <h4>General Statistic</h4>
           </div>
           <div class="horizontal-line"></div>
-        </div>
-        <div class="data">
-          <div class="general-wrapper">
-            <table class="data-table">
-              <tr>
-                <th>Visit Signups</th>
-                <td>125</td>
-              </tr>
-              <tr>
-                <th>FTD</th>
-                <td>445</td>
-              </tr>
-            </table>
-            <table class="data-table">
-              <tr>
-                <th>Net Deposit</th>
-                <td>541</td>
-              </tr>
-              <tr>
-                <th>Turn Over</th>
-                <td>435</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div class="earnings-chart">
-          <div class="subtitle-wrapper">
-            <h2>Earnings chart</h2>
-          </div>
-          <div class="general-wrapper">
-            <div class="earnings-chart-box-wrapper">
-              <div class="earnings-chart-box">
-                <span class="dot dot-signups"></span>
-                <a href="#">Signups</a>
+          <div class="calendar">
+            <div class="general-wrapper">
+              <div class="calendar-wrapper">
+                <div class="calendar-table">
+                  <p> 24.01.2020</p>
+                  <div class="vertical-line"></div>
+                  <p> 24.01.2020 </p>
+                  <div class="calendar-image">
+                    <a href="#"><img src="images/icons/calendar.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </div>
               </div>
-              <div class="earnings-chart-box">
-                <span class="dot dot-ftd"></span>
-                <a href="#">FTD</a>
-              </div>
-              <div class="earnings-chart-box">
-                <span class="dot dot-earned"></span>
-                <a href="#">Earned</a>
-              </div>
+              <button class="button" type="submit"><img src="images/icons/refresh.svg" class="icon-image" alt="picture"></button>
             </div>
+            <div class="horizontal-line"></div>
           </div>
-          <div class="scroll-wrapper">
-            <div class="chart-container">
-              <canvas id="myChart"></canvas>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="links-section">
-        <div class="container-title">
-          <h4>Links</h4>
-        </div>
-        <div class="horizontal-line"></div>
-        <div class="links-container">
-          <div class="button-container">
-            <button class="button btn-links" type="submit"><i class="fas fa-plus"></i>add new</button>
-          </div>
-          <div class="general-wrapper">
-            <div class="scroll-wrapper">
-              <table class="links-table">
+          <div class="data">
+            <div class="general-wrapper">
+              <table class="data-table">
                 <tr>
-                  <th>Home Page</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image icon" alt="picture"></a>
-                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
+                  <th>Visit Signups</th>
+                  <td>125</td>
                 </tr>
                 <tr>
-                  <th>Currently offer</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
-                    <a href="#" class="links-icon "><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
+                  <th>FTD</th>
+                  <td>445</td>
+                </tr>
+              </table>
+              <table class="data-table">
+                <tr>
+                  <th>Net Deposit</th>
+                  <td>541</td>
                 </tr>
                 <tr>
-                  <th>Blurpix</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
-                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Your Site</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
-                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Google</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
-                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Facebook</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
-                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Dashboard</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
-                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Blurax</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
-                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Piece of wine</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
-                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Twitter</th>
-                  <td><a href="#" class="link-address">http://www.twitter.com</a></td>
-                  <td class="img-wrapper">
-                    <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
-                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
-                  </td>
+                  <th>Turn Over</th>
+                  <td>435</td>
                 </tr>
               </table>
             </div>
           </div>
-          <div class="button-container">
-            <button class="button btn-links" type="submit"><i class="fas fa-plus"></i>add new</button>
+          <div class="earnings-chart">
+            <div class="subtitle-wrapper">
+              <h2>Earnings chart</h2>
+            </div>
+            <div class="general-wrapper">
+              <div class="earnings-chart-box-wrapper">
+                <div class="earnings-chart-box">
+                  <span class="dot dot-signups"></span>
+                  <a href="#">Signups</a>
+                </div>
+                <div class="earnings-chart-box">
+                  <span class="dot dot-ftd"></span>
+                  <a href="#">FTD</a>
+                </div>
+                <div class="earnings-chart-box">
+                  <span class="dot dot-earned"></span>
+                  <a href="#">Earned</a>
+                </div>
+              </div>
+            </div>
+            <div class="scroll-wrapper">
+              <div class="chart-container">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+        <article class="links-section container">
+          <div class="container-title">
+            <h4>Links</h4>
+          </div>
+          <div class="horizontal-line"></div>
+          <div class="links-container">
+            <div class="button-container">
+              <button class="button btn-links" type="submit"><i class="fas fa-plus"></i>add new</button>
+            </div>
+            <div class="general-wrapper">
+              <div class="scroll-wrapper">
+                <table class="links-table">
+                  <tr>
+                    <th>Home Page</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image icon" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Currently offer</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon "><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Blurpix</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Your Site</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Google</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Facebook</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Dashboard</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Blurax</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Piece of wine</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Twitter</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="button btn-links" type="submit"><i class="fas fa-plus"></i>add new</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div id="content_details" class="tab-content">
+        <article class="container">
+          <p> Still working on it ;)</p>
+        </article>
+      </div>
+      <div id="content_links" class="tab-content">
+        <article class="links-section container">
+          <div class="container-title">
+            <h4>Links</h4>
+          </div>
+          <div class="horizontal-line"></div>
+          <div class="links-container">
+            <div class="button-container">
+              <button class="button btn-links" type="submit"><i class="fas fa-plus"></i>add new</button>
+            </div>
+            <div class="general-wrapper">
+              <div class="scroll-wrapper">
+                <table class="links-table">
+                  <tr>
+                    <th>Home Page</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image icon" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Currently offer</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon "><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Blurpix</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Your Site</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Google</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Facebook</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Dashboard</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Blurax</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Piece of wine</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Twitter</th>
+                    <td><a href="#" class="link-address">http://www.twitter.com</a></td>
+                    <td class="img-wrapper">
+                      <a href="#" class="links-icon links-img"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                      <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="button btn-links" type="submit"><i class="fas fa-plus"></i>add new</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div id="content_banners" class="tab-content">
+        <article class="container">
+          <p> Still working on it ;)</p>
+        </article>
+      </div>
+      <div id="content_personal_data" class="tab-content">
+        <article class="container">
+          <p> Still working on it ;)</p>
+        </article>
+      </div>
+      <div id="content_payout" class="tab-content">
+        <article class="container">
+          <p> Still working on it ;)<p>
+        </article>
+      </div>
+      <div id="content_postback" class="tab-content">
+        <article class="container">
+          <p> Still working on it ;)</p>
+        </article>
+      </div>
+      </div>
     </main>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>

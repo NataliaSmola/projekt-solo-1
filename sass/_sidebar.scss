@@ -29,12 +29,16 @@
 
 .sidebar-menu {
   background: $sidebar-nav;
-  
+
 }
 
 .sidebar-menu-list {
   border: 1px solid green;
   display: contents;
+
+  .active a{
+    color: white;
+  }
 
   li {
     margin: 5px 0;
@@ -74,6 +78,7 @@
 
     .vertical-line-menu {
       opacity: 1;
+
     }
   }
 }
@@ -134,4 +139,11 @@
       position: relative;
     }
   }
+}
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }

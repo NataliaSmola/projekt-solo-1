@@ -3,6 +3,9 @@
   .top-nav-list .amount-user-wrapper .total-amount {
     display: none;
   }
+  .links-table th {
+    font-size: 11px;
+  }
 }
 // Small devices (landscape phones, 576px)
 @media (max-width: 575.98px) {
@@ -30,6 +33,9 @@
 
   .general-wrapper .dot {
     left: 1px;
+  }
+  .general-wrapper{
+    padding: 20px 5px;
   }
 
   .calendar-table p {
@@ -101,11 +107,16 @@
     padding-top: 60px;
   }
 
-  .links-table {
-    .link-address,
-    th {
-      font-size: 14px;
-    }
+  .links-table th, .data-table th {
+      font-size: 12px;
+
+  }
+  .links-table td, .data-table td {
+      font-size: 12px;
+
+  }
+  .links-icon{
+    opacity: 1;
   }
 }
 

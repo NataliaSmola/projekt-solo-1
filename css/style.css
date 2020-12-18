@@ -377,10 +377,8 @@ article {
   margin: 10px;
   padding: 20px 10px;
   box-shadow: -1px 1px 4px 0 grey;
-}
-
-.test {
-  overflow: hidden;
+  background-color: white;
+  min-height: 80vh;
 }
 
 * {
@@ -512,6 +510,10 @@ th {
   display: contents;
 }
 
+.sidebar-menu-list .active a {
+  color: white;
+}
+
 .sidebar-menu-list li {
   margin: 5px 0;
 }
@@ -610,6 +612,14 @@ th {
   border-radius: 50%;
   object-fit: cover;
   position: relative;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 #top_nav {
@@ -949,6 +959,9 @@ th {
   .top-nav-list .amount-user-wrapper .total-amount {
     display: none;
   }
+  .links-table th {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -972,6 +985,9 @@ th {
   }
   .general-wrapper .dot {
     left: 1px;
+  }
+  .general-wrapper {
+    padding: 20px 5px;
   }
   .calendar-table p {
     margin-right: 10px;
@@ -1039,9 +1055,14 @@ th {
         flex-direction: column;
     padding-top: 60px;
   }
-  .links-table .link-address,
-  .links-table th {
-    font-size: 14px;
+  .links-table th, .data-table th {
+    font-size: 12px;
+  }
+  .links-table td, .data-table td {
+    font-size: 12px;
+  }
+  .links-icon {
+    opacity: 1;
   }
 }
 
