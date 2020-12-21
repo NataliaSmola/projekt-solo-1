@@ -532,6 +532,10 @@ th {
   padding: 8px 10px;
 }
 
+.sidebar-menu-list li .sidebar-menu-list-wrapper:visited {
+  background-color: red;
+}
+
 .sidebar-menu-list li .icon-image {
   height: 15px;
   width: 15px;
@@ -1068,7 +1072,7 @@ th {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .sidebar-menu {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 80vh;
   }
 }
@@ -1078,7 +1082,7 @@ th {
     width: 80%;
   }
   .sidebar-menu {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 80vh;
   }
 }

@@ -25,6 +25,8 @@
   &:hover {
     background-color: $sidebar-hover-background;
   }
+
+
 }
 
 .sidebar-menu {
@@ -39,6 +41,7 @@
   .active a{
     color: white;
   }
+
 
   li {
     margin: 5px 0;
@@ -55,6 +58,7 @@
 
     .sidebar-menu-list-wrapper {
       padding: 8px 10px;
+    
     }
 
     .icon-image {
