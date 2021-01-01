@@ -1,6 +1,6 @@
 h1 {
   font-size: 25px;
-  font-family: $head-font;
+  font-family: $logo-font;
   color: $page-title-color;
   font-weight: lighter;
 }
@@ -25,10 +25,17 @@ h4 {
   color: $side-bar-font-color;
 }
 
+p{
+  font-family: $paragraph-font;
+
+}
+
 a {
   color: $side-bar-font-color;
   text-decoration: none;
   transition: $transition;
+  font-family: $paragraph-font;
+  font-size: 14px;
 }
 
 i {

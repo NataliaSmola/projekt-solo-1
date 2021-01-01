@@ -1,0 +1,20 @@
+.statistics-summary-table {
+  border-collapse: collapse;
+  width: 35%;
+  margin: 0 25px;
+}
+
+.statistics-summary-table th {
+  padding: 5px;
+}
+
+.statistics-summary-table td {
+  text-align: end;
+}
+
+.statistics-summary-table tr {
+  border-bottom: 1px solid #EEEEEB;
+  text-align: left;
+}
+
+/*# sourceMappingURL=statistics-summary-table.css.map */

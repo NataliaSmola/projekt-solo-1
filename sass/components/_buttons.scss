@@ -8,6 +8,10 @@
   padding: 10px;
   margin-left: 10px;
 
+  &:focus {
+    box-shadow: 0 0 11px $links-color;
+  }
+
   &:hover {
     box-shadow: 0 0 11px $links-color;
   }
@@ -17,23 +21,12 @@
   }
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-
-  .btn-links {
-    color: white;
-    justify-content: space-around;
-    font-size: 18px;
-    align-items: center;
-    height: 40px;
-    width: 110px;
-    border-radius: 5%;
-  }
-
-  i {
-    color: white;
-    font-size: 15px;
-  }
+.btn-links {
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  width: 110px;
+  border-radius: 5%;
+  font-family: $paragraph-font;
 }

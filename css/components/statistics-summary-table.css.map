@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "statistics-summary-table.css",
+	"sources": [
+		"../../sass/components/statistics-summary-table.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,yBAAyB,CAAC;EACxB,eAAe,EAAE,QAAQ;EACzB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CAcf;;AAjBD,AAKE,yBALuB,CAKvB,EAAE,CAAC;EACD,OAAO,EAAE,GAAG;CACb;;AAPH,AASE,yBATuB,CASvB,EAAE,CAAC;EACD,UAAU,EAAE,GAAG;CAChB;;AAXH,AAaE,yBAbuB,CAavB,EAAE,CAAC;EACD,aAAa,EAAE,iBAAiB;EAChC,UAAU,EAAE,IAAI;CACjB"
+}

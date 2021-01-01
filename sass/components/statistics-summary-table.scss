@@ -1,4 +1,4 @@
-.data-table {
+.statistics-summary-table {
   border-collapse: collapse;
   width: 35%;
   margin: 0 25px;
@@ -12,11 +12,7 @@
   }
 
   tr {
-    border-bottom: 1px solid $background-color;
+    border-bottom: 1px solid #EEEEEB;
     text-align: left;
   }
-}
-
-.data {
-  margin-top: 30px;
 }

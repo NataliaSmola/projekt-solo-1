@@ -1,10 +1,16 @@
 /*Media Query*/
 @media (max-width: 420px) {
-  .top-nav-list .amount-user-wrapper .total-amount {
+  .top-nav-list .nav-item .total-amount {
     display: none;
   }
   .links-table th {
     font-size: 11px;
+  }
+  .calendar p{
+    margin-right: 5px;
+  }
+  .links-icon{
+    display: none;
   }
 }
 // Small devices (landscape phones, 576px)
@@ -13,12 +19,12 @@
     display: block;
   }
 
-  .col-1 {
+  .left-side-section {
     display: flex;
     height: 70px;
   }
 
-  .earnings-chart-box {
+  .chart-legend {
     margin: 0 5px;
     padding: 5px;
   }
@@ -29,12 +35,15 @@
 
   .links-table {
     width: 100%;
+    .link-address{
+      font-size: 13px;
+    }
   }
 
-  .general-wrapper .dot {
+  .wrapper .dot {
     left: 1px;
   }
-  .general-wrapper{
+  .wrapper{
     padding: 20px 5px;
   }
 
@@ -62,11 +71,11 @@
     height: 50px;
   }
 
-  .top-nav-list .amount-user-wrapper {
+  .top-nav-list .nav-item {
     border-style: none;
   }
 
-  .chart-container {
+  .chart-wrapper {
     width: 100%;
   }
 
@@ -107,11 +116,11 @@
     padding-top: 60px;
   }
 
-  .links-table th, .data-table th {
+  .links-table th, .statistics-summary-table th {
       font-size: 12px;
 
   }
-  .links-table td, .data-table td {
+  .links-table td, .statistics-summary-table td {
       font-size: 12px;
 
   }
@@ -137,7 +146,7 @@
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .chart-container {
+  .chart-wrapper {
     width: 80%;
   }
 
@@ -145,17 +154,10 @@
     width: 60%;
   }
 
-  .sidebar-manager .manager-wrapper {
-    padding-right: 40px;
-  }
-
-  .sidebar-manager .manager-title {
-    padding-right: 50px;
-  }
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .chart-container {
+  .chart-wrapper {
     width: 60%;
   }
 }

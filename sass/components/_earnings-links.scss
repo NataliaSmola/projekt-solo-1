@@ -2,7 +2,7 @@
   margin-top: 50px;
 }
 
-.earnings-chart-box {
+.chart-legend {
   padding: 10px 15px;
   position: relative;
   background: $background-color;
@@ -46,11 +46,7 @@
   }
 }
 
-.earnings-chart-box-wrapper {
-  display: inline-flex;
-}
-
-.chart-container {
+.chart-wrapper {
   position: relative;
   width: 100%;
   max-width: 100%;

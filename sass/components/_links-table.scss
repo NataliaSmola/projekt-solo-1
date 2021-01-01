@@ -1,11 +1,10 @@
-.links-container {
-  //border: 1px solid blue;
-}
+
 
 .links-table {
   margin: 0 auto;
   border-collapse: collapse;
   transition: $transition;
+  width: 100%;
 
   th {
     text-align: left;

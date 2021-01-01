@@ -1,4 +1,5 @@
-/* global Chart */
+'use strict';
+/*hamburger menu on click*/
 
 function toggleMenu(visible) {
   document.querySelector('.sidebar-menu').classList.toggle('show', visible);
@@ -10,6 +11,7 @@ document.querySelector('.hamburger').addEventListener('click', function(e) {
   toggleMenu()
 });
 
+/* global Chart */
 const ctx = document.getElementById('myChart').getContext('2d');
 
 const chart = new Chart(ctx, {
@@ -54,22 +56,43 @@ const chart = new Chart(ctx, {
 
 });
 
+/*clickable links*/
 
-(function(){
-          function onTabClick(event){
-            var actives = document.querySelectorAll('.active');
+const titleClickHandler = function(event){
+  event.preventDefault();
+  const clickedElement = this;
+  console.log('Link was clicked!');
 
-            // deactivate existing active tab and panel
-            for (var i=0; i < actives.length; i++){
-              actives[i].className = actives[i].className.replace('active', '');
-            }
+  /* remove class 'active' from all menu links  */
+  const activeLinks = document.querySelectorAll('.titles a.active');
+   for (let activeLink of activeLinks){
+     activeLink.classList.remove('active');
+     //console.log(activeLinks);
+   }
 
-            // activate new tab and panel
-            event.target.parentElement.className += ' active';
-            document.getElementById(event.target.href.split('#')[1]).className += ' active';
-          }
+  /* add class 'active' to the clicked link */
+  clickedElement.classList.add('active');
 
-          var el = document.getElementById('nav-tab');
+  /* remove class 'active' from all sections */
+  const activeSections = document.querySelectorAll('.content .active');
+   for (let activeSection of activeSections){
+     activeSection.classList.remove('active');
+     //console.log(activeLinks);
+   }
+  /* get 'href' attribute from the clicked link */
+  const articleSelector = clickedElement.getAttribute('href');
+  console.log(articleSelector);
+  /* find the correct article using the selector (value of 'href' attribute) */
+  const targetArticle = document.querySelector(articleSelector);
+  console.log(targetArticle);
 
-          el.addEventListener('click', onTabClick, false);
-        })();
+  /* add class 'active' to the correct article */
+
+  targetArticle.classList.add('active');
+}
+
+const links = document.querySelectorAll('.titles a');
+
+for(let link of links){
+  link.addEventListener('click', titleClickHandler);
+}

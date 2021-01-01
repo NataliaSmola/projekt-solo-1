@@ -1,9 +1,9 @@
-.col-1 {
+.left-side-section {
   flex: 3;
   height: 100vh;
 }
 
-.col-2 {
+.middle-side-section {
   display: grid;
   flex-direction: column;
   flex: 80%;
@@ -11,11 +11,15 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
   overflow-y: auto;
   position: relative;
   overflow-y: scroll;
+}
+.content-wrapper{
+  display: none;
+  &.active {
+    display: block;
+  }
 }
 
 .content > article {
