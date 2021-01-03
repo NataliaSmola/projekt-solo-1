@@ -25,9 +25,7 @@
     }
   }
 
-  .link-address {
-    color: $links-color;
-  }
+
 }
 
 .links-img {
@@ -36,9 +34,36 @@
 
 .links-icon {
   margin-left: 10px;
-  opacity: 0;
+  opacity: 1;
 }
 
 .links-table tr:hover .links-icon {
   opacity: 1;
+}
+
+.links-list {
+  border: 1px solid red;
+  width: 100%;
+}
+
+.link-item{
+  border:1px solid green;
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    border: 1px solid black;
+  }
+  .link-address {
+    border: 1px solid blue;
+    align-items: center;
+    display: flex;
+  }
+  .img-wrapper{
+    border:1px solid red;
+    display: flex;
+    align-items: center;
+  }
+  .links-img {
+    filter: grayscale(150%) brightness(150%) sepia(60%) hue-rotate(5deg) saturate(500%) contrast(0.9);
+  }
 }
