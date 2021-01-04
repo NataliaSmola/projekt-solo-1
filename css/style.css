@@ -841,79 +841,54 @@ th {
   text-align: left;
 }
 
-.links-table {
-  margin: 0 auto;
-  border-collapse: collapse;
-  transition: all 0.5s ease;
-  width: 100%;
-}
-
-.links-table th {
-  text-align: left;
-  padding: 15px 5px;
-}
-
-.links-table td {
-  text-align: center;
-}
-
-.links-table tr {
-  border-bottom: 1px solid #EEEEEB;
-  border-top: 1px solid #EEEEEB;
-  z-index: 1;
-}
-
-.links-table tr:hover {
-  background-color: #F1F3F3;
-}
-
-.links-img {
-  filter: grayscale(150%) brightness(150%) sepia(60%) hue-rotate(5deg) saturate(500%) contrast(0.9);
-}
-
-.links-icon {
-  margin-left: 10px;
-  opacity: 1;
-}
-
-.links-table tr:hover .links-icon {
-  opacity: 1;
-}
-
 .links-list {
-  border: 1px solid red;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .link-item {
-  border: 1px solid green;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  border-bottom: 1px solid #EEEEEB;
+  height: 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr 1fr;
+      grid-template-columns: 2fr 3fr 1fr;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
-.link-item h2 {
-  border: 1px solid black;
+.link-item:hover {
+  background-color: #EEEEEB;
+}
+
+.link-item .name-position {
+  font-size: 15px;
 }
 
 .link-item .link-address {
-  border: 1px solid blue;
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
-  display: flex;
+  font-size: 15px;
+  text-align: center;
 }
 
 .link-item .img-wrapper {
-  border: 1px solid red;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 5px;
 }
 
-.link-item .links-img {
+.link-item .img-wrapper .links-icon {
+  margin-left: 15px;
+  opacity: 0;
+}
+
+.link-item:hover .img-wrapper .links-icon {
+  opacity: 1;
+}
+
+.links-img {
   filter: grayscale(150%) brightness(150%) sepia(60%) hue-rotate(5deg) saturate(500%) contrast(0.9);
 }
 
@@ -923,7 +898,6 @@ th {
 
 .chart-legend {
   padding: 10px 15px;
-  position: relative;
   background: #EEEEEB;
   border-radius: 3px;
   margin: 0 20px;
@@ -941,20 +915,20 @@ th {
   box-shadow: none;
 }
 
-.chart-legend .dot-signups {
-  background: #80BFCA;
-}
-
-.chart-legend .dot-ftd {
-  background: #FF9A38;
-}
-
-.chart-legend .dot-earned {
-  background: #59B66D;
-}
-
 .chart-legend a {
   padding: 0 15px;
+  color: #808080;
+}
+
+.chart-legend a::before {
+  display: inline-block;
+  content: '';
+  background: #80BFCA;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: -2px;
 }
 
 .chart-legend a:hover {
@@ -963,6 +937,14 @@ th {
 
 .chart-legend a:active {
   color: #56819f;
+}
+
+.chart-legend:nth-of-type(2) a:before {
+  background: #FF9A38;
+}
+
+.chart-legend:nth-of-type(3) a:before {
+  background: #59B66D;
 }
 
 .chart-wrapper {
@@ -984,14 +966,15 @@ th {
   .top-nav-list .nav-item .total-amount {
     display: none;
   }
-  .links-table th {
-    font-size: 11px;
-  }
   .calendar p {
     margin-right: 5px;
   }
-  .links-icon {
-    display: none;
+  .column-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .statistics-summary-table {
+    width: auto;
   }
 }
 
@@ -1005,20 +988,22 @@ th {
     height: 70px;
   }
   .chart-legend {
-    margin: 0 5px;
     padding: 5px;
+    margin: 3px 10px;
   }
   .content {
     height: 85vh;
   }
-  .links-table {
+  .links-list {
     width: 100%;
   }
-  .links-table .link-address {
-    font-size: 13px;
+  .link-item {
+    display: block;
+    height: 75px;
+    text-align: center;
   }
-  .wrapper .dot {
-    left: 1px;
+  .link-item .img-wrapper .links-icon {
+    opacity: 1;
   }
   .wrapper {
     padding: 20px 5px;
@@ -1089,15 +1074,6 @@ th {
         flex-direction: column;
     padding-top: 60px;
   }
-  .links-table th, .statistics-summary-table th {
-    font-size: 12px;
-  }
-  .links-table td, .statistics-summary-table td {
-    font-size: 12px;
-  }
-  .links-icon {
-    opacity: 1;
-  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1105,12 +1081,16 @@ th {
     overflow-y: auto;
     height: 80vh;
   }
+  .links-list {
+    width: 100%;
+  }
+  .chart-legend {
+    padding: 5px;
+    margin: 0 10px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .links-table {
-    width: 80%;
-  }
   .sidebar-menu {
     overflow-y: auto;
     height: 80vh;
@@ -1120,9 +1100,6 @@ th {
 @media (min-width: 992px) {
   .chart-wrapper {
     width: 80%;
-  }
-  .links-table {
-    width: 60%;
   }
 }
 
